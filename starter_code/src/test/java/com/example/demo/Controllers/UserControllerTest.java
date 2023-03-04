@@ -49,11 +49,11 @@ public class UserControllerTest {
 
     @Test
     public void test_find_user_by_id(){
-        final ResponseEntity<User> responseEntity = createTestUser();
+        ResponseEntity<User> responseEntity = createTestUser();
         User user = responseEntity.getBody();
         when(userRepository.findById(user.getId())).thenReturn(Optional.of(user));
 
-        final ResponseEntity<User> findUserById = userController.findById(user.getId());
+        ResponseEntity<User> findUserById = userController.findById(user.getId());
         User userFound = findUserById.getBody();
         assertEquals(200, findUserById.getStatusCodeValue());
         assertEquals(0, userFound.getId());
@@ -64,11 +64,11 @@ public class UserControllerTest {
 
     @Test
     public void test_find_user_by_username() throws Exception {
-        final ResponseEntity<User> responseEntity = createTestUser();
+        ResponseEntity<User> responseEntity = createTestUser();
         User user = responseEntity.getBody();
 
         when(userRepository.findByUsername(user.getUsername())).thenReturn(user);
-        final ResponseEntity<User> findByUserName = userController.findByUserName(user.getUsername());
+        ResponseEntity<User> findByUserName = userController.findByUserName(user.getUsername());
         User userFound = findByUserName.getBody();
         assertEquals(200, findByUserName.getStatusCodeValue());
         assertEquals(0, userFound.getId());
@@ -82,7 +82,7 @@ public class UserControllerTest {
         createUserRequest.setUsername("test");
         createUserRequest.setPassword("password");
         createUserRequest.setConfirmPassword("password");
-        final ResponseEntity<User> responseEntity = userController.createUser(createUserRequest);
+        ResponseEntity<User> responseEntity = userController.createUser(createUserRequest);
         return responseEntity;
     }
 
