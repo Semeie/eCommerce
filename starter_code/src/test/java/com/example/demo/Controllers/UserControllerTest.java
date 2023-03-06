@@ -76,7 +76,7 @@ public class UserControllerTest {
         assertEquals("thisIsHashed", userFound.getPassword());
     }
 
-    public ResponseEntity<User> createTestUser() {
+    private ResponseEntity<User> createTestUser() {
         when(encoder.encode("password")).thenReturn("thisIsHashed");
         CreateUserRequest createUserRequest = new CreateUserRequest();
         createUserRequest.setUsername("test");
