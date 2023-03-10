@@ -24,7 +24,7 @@ import com.example.demo.model.requests.CreateUserRequest;
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
-	
+	private final static Logger log = LoggerFactory.getLogger(UserController.class);
 	@Autowired
 	private UserRepository userRepository;
 	
@@ -33,7 +33,6 @@ public class UserController {
 
 	@Autowired
 	private BCryptPasswordEncoder bCryptPasswordEncoder;
-	private final static Logger log = LoggerFactory.getLogger(UserController.class);
 
 	@GetMapping("/id/{id}")
 	public ResponseEntity<User> findById(@PathVariable Long id) {
@@ -48,6 +47,7 @@ public class UserController {
 	
 	@PostMapping("/create")
 	public ResponseEntity<User> createUser(@RequestBody CreateUserRequest createUserRequest) {
+		log.info("creating new user {}", createUserRequest.getUsername());
 		User user = new User();
 		user.setUsername(createUserRequest.getUsername());
 		Cart cart = new Cart();
@@ -60,7 +60,7 @@ public class UserController {
 		}
 		user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
 		userRepository.save(user);
-		log.info("User created {}" + createUserRequest.getUsername());
+		log.info("User "+createUserRequest.getUsername()+" created.");
 		return ResponseEntity.ok(user);
 	}
 	

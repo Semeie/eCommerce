@@ -1,0 +1,62 @@
+2023-03-09 17:57:39.885  INFO 14832 --- [main] com.example.demo.eCommerceApplication    : Starting eCommerceApplication on DESKTOP-S1P1R8I with PID 14832 (C:\Users\semte\eCommerce\starter_code\target\classes started by semte in C:\Users\semte\eCommerce)
+2023-03-09 17:57:39.986  INFO 14832 --- [main] com.example.demo.eCommerceApplication    : No active profile set, falling back to default profiles: default
+2023-03-09 17:57:47.632  INFO 14832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-03-09 17:57:48.251  INFO 14832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 475ms. Found 4 repository interfaces.
+2023-03-09 17:57:51.743  INFO 14832 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$88ef0183] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-09 17:57:54.753  INFO 14832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-03-09 17:57:54.941  INFO 14832 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-09 17:57:54.943  INFO 14832 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-03-09 17:57:57.336  INFO 14832 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-09 17:57:57.338  INFO 14832 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 15998 ms
+2023-03-09 17:57:58.470  INFO 14832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09 17:57:59.970  INFO 14832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09 17:58:00.668  INFO 14832 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-09 17:58:01.368  INFO 14832 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2023-03-09 17:58:01.384  INFO 14832 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2023-03-09 17:58:02.419  INFO 14832 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-09 17:58:03.696  INFO 14832 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-09 17:58:09.322  INFO 14832 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09 17:58:13.700  WARN 14832 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-09 17:58:14.249  INFO 14832 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6296e4bf, org.springframework.security.web.context.SecurityContextPersistenceFilter@8c3b634, org.springframework.security.web.header.HeaderWriterFilter@3da61af2, org.springframework.web.filter.CorsFilter@220cda54, org.springframework.security.web.authentication.logout.LogoutFilter@66abc325, com.example.demo.Security.JWTAuthenticationFilter@39109603, com.example.demo.Security.JWTAuthenticationVerificationFilter@4d3990a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e27bb89, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@532ea86b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18df26a1, org.springframework.security.web.session.SessionManagementFilter@417751d3, org.springframework.security.web.access.ExceptionTranslationFilter@1e54e900, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ef914f5]
+2023-03-09 17:58:15.045  INFO 14832 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-09 17:58:16.440  INFO 14832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-03-09 17:58:16.453  INFO 14832 --- [main] com.example.demo.eCommerceApplication    : Started eCommerceApplication in 40.071 seconds (JVM running for 45.622)
+2023-03-09 17:59:17.404  INFO 14832 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 17:59:17.407  INFO 14832 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-09 17:59:17.500  INFO 14832 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 92 ms
+2023-03-09 17:59:18.222  INFO 14832 --- [http-nio-8082-exec-2] c.e.demo.controllers.UserController      : creating new user Aman
+2023-03-09 17:59:19.262  INFO 14832 --- [http-nio-8082-exec-2] c.e.demo.controllers.UserController      : User Aman created.
+2023-03-09 17:59:47.902  INFO 14832 --- [http-nio-8082-exec-5] c.e.demo.controllers.UserController      : creating new user Semere
+2023-03-09 17:59:47.917 ERROR 14832 --- [http-nio-8082-exec-5] c.e.demo.controllers.UserController      : Error: user password is either less than 7 or mismatched. Unable to create user Semere
+2023-03-09 18:00:06.464  INFO 14832 --- [http-nio-8082-exec-10] c.e.demo.controllers.UserController      : creating new user Semere
+2023-03-09 18:00:07.071  INFO 14832 --- [http-nio-8082-exec-10] c.e.demo.controllers.UserController      : User Semere created.
+2023-03-09 18:00:38.993  INFO 14832 --- [http-nio-8082-exec-3] c.e.demo.controllers.UserController      : creating new user Alex
+2023-03-09 18:00:39.004 ERROR 14832 --- [http-nio-8082-exec-3] c.e.demo.controllers.UserController      : Error: user password is either less than 7 or mismatched. Unable to create user Alex
+2023-03-09 18:00:52.215  INFO 14832 --- [http-nio-8082-exec-7] c.e.demo.controllers.UserController      : creating new user Alex
+2023-03-09 18:00:52.832  INFO 14832 --- [http-nio-8082-exec-7] c.e.demo.controllers.UserController      : User Alex created.
+2023-03-09 18:04:08.851  INFO 14832 --- [http-nio-8082-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2023-03-09 18:04:49.681  INFO 14832 --- [http-nio-8082-exec-2] c.e.demo.controllers.CartController      : Item for User Aman added successfully!
+2023-03-09 18:05:09.312  INFO 14832 --- [http-nio-8082-exec-5] c.e.demo.controllers.CartController      : Item for User Aman added successfully!
+2023-03-09 18:05:44.057  INFO 14832 --- [http-nio-8082-exec-9] c.e.demo.controllers.CartController      : Item for User Alex added successfully!
+2023-03-09 18:06:08.783  INFO 14832 --- [http-nio-8082-exec-10] c.e.demo.controllers.CartController      : Item for User Semere added successfully!
+2023-03-09 18:06:27.057 ERROR 14832 --- [http-nio-8082-exec-3] c.e.demo.controllers.CartController      : Adding to cart error. Item 4 not found
+2023-03-09 18:07:09.234 ERROR 14832 --- [http-nio-8082-exec-4] c.e.demo.controllers.CartController      : Adding to cart error. Item 3 not found
+2023-03-09 18:07:41.299  INFO 14832 --- [http-nio-8082-exec-7] c.e.demo.controllers.OrderController     : Submit order for user: Aman
+2023-03-09 18:07:41.391  INFO 14832 --- [http-nio-8082-exec-7] c.e.demo.controllers.OrderController     : Order for user Aman submitted successful!
+2023-03-09 18:08:02.628  INFO 14832 --- [http-nio-8082-exec-8] c.e.demo.controllers.OrderController     : Submit order for user: Semere
+2023-03-09 18:08:02.643  INFO 14832 --- [http-nio-8082-exec-8] c.e.demo.controllers.OrderController     : Order for user Semere submitted successful!
+2023-03-09 18:09:01.361  INFO 14832 --- [http-nio-8082-exec-6] c.e.demo.controllers.OrderController     : Submit order for user: Ama
+2023-03-09 18:09:01.368 ERROR 14832 --- [http-nio-8082-exec-6] c.e.demo.controllers.OrderController     : Submit error. User Ama not found.
+2023-03-09 18:09:32.265  INFO 14832 --- [http-nio-8082-exec-1] c.e.demo.controllers.OrderController     : Submit order for user: Semer
+2023-03-09 18:09:32.270 ERROR 14832 --- [http-nio-8082-exec-1] c.e.demo.controllers.OrderController     : Submit error. User Semer not found.
+2023-03-09 18:10:00.325  INFO 14832 --- [http-nio-8082-exec-2] c.e.demo.controllers.OrderController     : Retrieve order history for user: Aman
+2023-03-09 18:10:00.342  INFO 14832 --- [http-nio-8082-exec-2] c.e.demo.controllers.OrderController     : Orders for user Aman retrieved successfully!
+2023-03-09 18:10:16.987  INFO 14832 --- [http-nio-8082-exec-5] c.e.demo.controllers.OrderController     : Retrieve order history for user: Ama
+2023-03-09 18:10:16.993 ERROR 14832 --- [http-nio-8082-exec-5] c.e.demo.controllers.OrderController     : Error: User Ama not found. Unable to retrieve order
+2023-03-09 18:11:14.426  INFO 14832 --- [http-nio-8082-exec-9] c.e.demo.controllers.OrderController     : Retrieve order history for user: Semere
+2023-03-09 18:11:14.452  INFO 14832 --- [http-nio-8082-exec-9] c.e.demo.controllers.OrderController     : Orders for user Semere retrieved successfully!
+2023-03-09 18:11:26.747  INFO 14832 --- [http-nio-8082-exec-10] c.e.demo.controllers.OrderController     : Retrieve order history for user: Semer
+2023-03-09 18:11:26.754 ERROR 14832 --- [http-nio-8082-exec-10] c.e.demo.controllers.OrderController     : Error: User Semer not found. Unable to retrieve order
+
