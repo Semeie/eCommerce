@@ -29,7 +29,7 @@ http://localhost:8080/api/user/create with an example body like
 
 ```
 {
-    "username": "test"
+    "username": "A.ex"
 }
 ```
 
@@ -38,7 +38,7 @@ and this would return
 ```
 {
     "id" 1,
-    "username": "test"
+    "username": "Alex"
 }
 ```
 
@@ -69,8 +69,8 @@ Once all this is setup, you can use Spring's default /login endpoint to login li
 ```
 POST /login 
 {
-    "username": "test",
-    "password": "somepassword"
+    "username": "Alex",
+    "password": "abcdefghi"
 }
 ```
 
@@ -78,3 +78,41 @@ and that should, if those are valid credentials, return a 200 OK with an Authori
 
 ## Testing
 You must implement unit tests demonstrating at least 80% code coverage.
+
+## Screenshots
+<details>
+<summary>Click here to show the screenshots of project</summary>
+ <br>
+ <p> Docker_containers </p>
+ <img src ="Screenshots/Docker/Docker_containers_in_EC2.png">
+ <p> Jenkins Build_success </p>
+ <img src ="Screenshots/Jenkins/Jenkins Build_success.png">
+  <p> Jenkins Build </p>
+ <img src ="Screenshots/Jenkins/Jenkins Build#.png">
+  <p> Jenkins Dashboard </p>
+ <img src ="Screenshots/Jenkins/Jenkins Dashboard.png">
+  <p> Splunk Upload </p>
+ <img src ="Screenshots/Splunk/Splunk Upload.png">
+  <p> Splunk Alert </p>
+ <img src ="Screenshots/Splunk/Splunk Alert.png">
+  <p> Splunk Alert_Detail </p>
+ <img src ="Screenshots/Splunk/Splunk Alert_Detail.png">
+  <p> Splunk Dashboard </p>
+ <img src ="Screenshots/Splunk/Splunk Dashboard.png">
+  <p> Splunk search </p>
+ <img src ="Screenshots/Splunk/Splunk search .png">
+  <p>Splunk search_query </p>
+ <img src ="Screenshots/Splunk/Splunk search_query.png">
+   <p> CreateUser </p>
+ <img src ="Screenshots/Postman/CreateUser.png">
+   <p> LogIn </p>
+ <img src ="Screenshots/Postman/LogIn.png">
+    <p> getUserFail </p>
+ <img src ="Screenshots/Postman/getUserFail.png">
+  <p> getUserwithJWT </p>
+ <img src ="Screenshots/Postman/getUserwithJWT.png">
+  <p> addToCart </p>
+ <img src ="Screenshots/Postman/addToCart.png">
+  <p> submitOrder </p>
+ <img src ="Screenshots/Postman/submitOrder.png">
+</details>
