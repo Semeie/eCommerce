@@ -29,7 +29,7 @@ http://localhost:8080/api/user/create with an example body like
 
 ```
 {
-    "username": "A.ex"
+    "username": "Alex"
 }
 ```
 
@@ -37,7 +37,7 @@ http://localhost:8080/api/user/create with an example body like
 and this would return
 ```
 {
-    "id" 1,
+    "id": "1",
     "username": "Alex"
 }
 ```
@@ -70,7 +70,7 @@ Once all this is setup, you can use Spring's default /login endpoint to login li
 POST /login 
 {
     "username": "Alex",
-    "password": "abcdefghi"
+    "password": "abcdefgh"
 }
 ```
 
